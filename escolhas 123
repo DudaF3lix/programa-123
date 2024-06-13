@@ -1,5 +1,6 @@
 programa {
-  inteiro esc
+  inclua biblioteca Util --> u
+  inteiro esc, nusorteado
   real peso, altura, imc
   real prova1, prova2, prova3
   real trab1, trab2, trab3
@@ -42,8 +43,13 @@ programa {
         media = (prova1 + prova2 + prova3 + trab1 + trab2 + trab3) / 3
         escreva ("sua média anual é:")
         escreva (media)
+      caso 3:
+        nusorteado = u.sorteia(1,10)
+        escreva ("o número sorteado é \n")
+        escreva (nusorteado)
     
       pare
     }
   }
 }
+
